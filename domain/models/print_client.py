@@ -1,4 +1,4 @@
-class user:
+class client:
 
     def __int__(self, id, name, last_name, phone, address, city, municipality,email, status):
         self._id = id
