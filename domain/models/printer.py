@@ -1,14 +1,14 @@
 class printer:
 
-    def __int__(self, brand, reference, serial, counter, price, ref_toner, origin, place_storage, status):
+    def __int__(self, brand, reference, serial, counter, price, ref_toner, stock, id_category, status):
         self._brand = brand
         self._reference = reference
         self._serial = serial
         self._counter = counter
         self._price = price
         self._ref_toner = ref_toner
-        self._origin = origin
-        self._place_storage = place_storage
+        self._stock = stock
+        self._id_category = id_category
         self._status = status
 
     ## _brand
@@ -65,23 +65,23 @@ class printer:
     def ref_toner(self, ref_toner):
         self._ref_toner = ref_toner
 
-    ## _origin
+    ## _stock
     @property
-    def origin(self):
-        return self._origin
+    def stock(self):
+        return self.stock
 
-    @origin.setter
-    def origin(self, origin):
-        self._origin = origin
+    @stock.setter
+    def stock(self, stock):
+        self.stock = stock
 
     ## _place_storage
     @property
-    def place_storage(self):
-        return self._place_storage
+    def id_category(self):
+        return self._id_category
 
-    @place_storage.setter
-    def place_storage(self, place_storage):
-        self._place_storage = place_storage
+    @id_category.setter
+    def id_category(self, id_category):
+        self._id_category = id_category
 
     ## _status
     @property
