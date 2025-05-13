@@ -1,4 +1,4 @@
-class newprinter:
+class printer:
 
     def __int__(self, brand, reference, serial, counter, price, ref_toner, origin, place_storage, status):
         self._brand = brand
